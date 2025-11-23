@@ -1,12 +1,13 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-
-
+import { runGitCommand, readStageDiff, readChangedFiles } from "./git.js"
+import { z as zod, ZodType } from "zod";
 async function main() {
   const server = new McpServer({
     name: 'git-commit-mcp',
     version: '1.0.0'
   });
+
 
   const transport = new StdioServerTransport();
   console.info("INFO :: Started github MCP Server");
