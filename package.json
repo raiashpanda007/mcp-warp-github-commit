@@ -1,0 +1,20 @@
+{
+  "name": "mcp-github-commit",
+  "version": "1.0.0",
+  "description": "Small MCP server exposing git-related tools for Warp (or any MCP-enabled LLM client) to read the staged diff and changed files so the LLM can generate commit messages. mcp-warp-github-commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
